@@ -1,7 +1,7 @@
 <!-- start of page -->
 
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="scroll-smooth">
 
 <!-- //
 project management: Iqbal, Bintang, Yoeichi
@@ -41,32 +41,80 @@ project management: Iqbal, Bintang, Yoeichi
 
 <body>
     <div class="min-h-screen flex flex-col">
-        <header class="border-b border-[#D9D9D9] p-3 flex items-center justify-between">
+        <header class="border-b border-[#D9D9D9] p-3 flex items-center justify-between fixed w-full bg-white">
             <div class="flex items-center gap-1">
                 <i class="fa-solid fa-briefcase-medical text-2xl"></i>
                 <h2 class="font-bold text-2xl">Unipro.</h2>
             </div>
             <nav class="flex items-center gap-4 font-semibold text-gray-900">
-                <a href="" class="hover:text-gray-700">Home</a>
-                <a href="" class="hover:text-gray-700">About</a>
-                <a href="" class="hover:text-gray-700">Contact</a>
+                <a href="#home" class="hover:text-gray-700">Home</a>
+                <a href="#about" class="hover:text-gray-700">About</a>
+                <a href="#contact" class="hover:text-gray-700">Contact</a>
             </nav>
             <a href="#" class="py-1.5 px-2.5 border-2 border-gray-900 rounded-full hover:bg-gray-900 hover:text-white">
                 <span>Get Started</span>
                 <i class="fa-solid fa-arrow-right"></i>
             </a>
         </header>
-        <main class="flex-1 flex items-center justify-center flex-col gap-4">
-            <div class="flex flex-col items-center font-bold text-3xl">
-                <h1>Empowering Lives Through Health</h1>
-                <h1>Navigating Health Together:</h1>
-                <h1>Your Trusted Medical Resource</h1>
+        <main class="flex flex-col">
+            <div class="w-full h-screen flex items-center justify-center">
+                <div class="content flex flex-col items-center gap-4 transition-all duration-1000" id="home">
+                    <div class="flex flex-col items-center font-bold text-3xl">
+                        <h1>Empowering Lives Through Health</h1>
+                        <h1>Navigating Health Together:</h1>
+                        <h1>Your Trusted Medical Resource</h1>
+                    </div>
+                    <a href="" class="bg-gray-900 text-white flex items-center gap-2 py-2 px-3 rounded-full">
+                        <span class="font-semibold">Learn More</span>
+                        <i class="fa-solid fa-arrow-right"></i>
+                    </a>
+                </div>
             </div>
-            <a href="" class="bg-gray-900 text-white flex items-center gap-2 py-2 px-3 rounded-full">
-                <span class="font-semibold">Learn More</span>
-                <i class="fa-solid fa-arrow-right"></i>
-            </a>
+            <div class="w-full h-screen flex items-center justify-center">
+                <div class="content flex flex-col items-center gap-4 transition-all duration-1000" id="home">
+                    <div class="flex flex-col items-center font-bold text-3xl">
+                        <h1>Empowering Lives Through Health</h1>
+                        <h1>Navigating Health Together:</h1>
+                        <h1>Your Trusted Medical Resource</h1>
+                    </div>
+                    <a href="" class="bg-gray-900 text-white flex items-center gap-2 py-2 px-3 rounded-full">
+                        <span class="font-semibold">Learn More</span>
+                        <i class="fa-solid fa-arrow-right"></i>
+                    </a>
+                </div>
+            </div>
+            <div class="w-full h-screen flex items-center justify-center">
+                <div class="content flex flex-col items-center gap-4 transition-all duration-1000" id="home">
+                    <div class="flex flex-col items-center font-bold text-3xl">
+                        <h1>Empowering Lives Through Health</h1>
+                        <h1>Navigating Health Together:</h1>
+                        <h1>Your Trusted Medical Resource</h1>
+                    </div>
+                    <a href="" class="bg-gray-900 text-white flex items-center gap-2 py-2 px-3 rounded-full">
+                        <span class="font-semibold">Learn More</span>
+                        <i class="fa-solid fa-arrow-right"></i>
+                    </a>
+                </div>
+            </div>
         </main>
     </div>
+<script>
+    const allContent = document.querySelectorAll(".content")
+    const observer = new IntersectionObserver((entries)=>{
+        entries.forEach(entry=>{
+            if(entry.isIntersecting){
+                entry.target.classList.add("opacity-100")
+                entry.target.classList.remove("opacity-0")
+            }else{
+                entry.target.classList.remove("opacity-100")
+                entry.target.classList.add("opacity-0")
+            }
+        })
+    })
+
+    allContent.forEach(content=>{
+        observer.observe(content)
+    })
+</script>
 </body>
 </html>
