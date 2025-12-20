@@ -324,6 +324,9 @@
   .h-25 {
     height: calc(var(--spacing) * 25);
   }
+  .h-60 {
+    height: calc(var(--spacing) * 60);
+  }
   .h-90 {
     height: calc(var(--spacing) * 90);
   }
@@ -375,6 +378,9 @@
   .w-70 {
     width: calc(var(--spacing) * 70);
   }
+  .w-75 {
+    width: calc(var(--spacing) * 75);
+  }
   .w-80 {
     width: calc(var(--spacing) * 80);
   }
@@ -387,6 +393,9 @@
   .w-120 {
     width: calc(var(--spacing) * 120);
   }
+  .w-130 {
+    width: calc(var(--spacing) * 130);
+  }
   .w-135 {
     width: calc(var(--spacing) * 135);
   }
@@ -395,6 +404,9 @@
   }
   .w-150 {
     width: calc(var(--spacing) * 150);
+  }
+  .w-160 {
+    width: calc(var(--spacing) * 160);
   }
   .w-\[200px\] {
     width: 200px;
@@ -524,8 +536,14 @@
   .gap-10 {
     gap: calc(var(--spacing) * 10);
   }
+  .gap-12 {
+    gap: calc(var(--spacing) * 12);
+  }
   .gap-15 {
     gap: calc(var(--spacing) * 15);
+  }
+  .gap-18 {
+    gap: calc(var(--spacing) * 18);
   }
   .overflow-auto {
     overflow: auto;
@@ -615,6 +633,9 @@
   .bg-\[\#E5ECF9\] {
     background-color: #E5ECF9;
   }
+  .bg-\[\#F6F6F6\] {
+    background-color: #F6F6F6;
+  }
   .bg-white {
     background-color: var(--color-white);
   }
@@ -643,6 +664,9 @@
   }
   .bg-\[url\(\/src\/img\/female-black-doctor\.jpg\)\] {
     background-image: url(/src/img/female-black-doctor.jpg);
+  }
+  .bg-\[url\(\/src\/img\/lab\.jpg\)\] {
+    background-image: url(/src/img/lab.jpg);
   }
   .bg-\[url\(\/src\/img\/promotion-doctor\.npg\)\] {
     background-image: url(/src/img/promotion-doctor.npg);
@@ -684,6 +708,9 @@
   }
   .bg-bottom {
     background-position: bottom;
+  }
+  .bg-center {
+    background-position: center;
   }
   .bg-top {
     background-position: top;
@@ -751,8 +778,14 @@
   .px-4 {
     padding-inline: calc(var(--spacing) * 4);
   }
+  .px-5 {
+    padding-inline: calc(var(--spacing) * 5);
+  }
   .px-6 {
     padding-inline: calc(var(--spacing) * 6);
+  }
+  .px-8 {
+    padding-inline: calc(var(--spacing) * 8);
   }
   .px-20 {
     padding-inline: calc(var(--spacing) * 20);
@@ -842,6 +875,9 @@
   .text-\[\#4E4E4E\] {
     color: #4E4E4E;
   }
+  .text-\[\#009DFF\] {
+    color: #009DFF;
+  }
   .text-\[\#9C9C9C\] {
     color: #9C9C9C;
   }
@@ -856,6 +892,9 @@
   }
   .text-\[\#191919\] {
     color: #191919;
+  }
+  .text-\[\#282828\] {
+    color: #282828;
   }
   .text-\[\#454545\] {
     color: #454545;

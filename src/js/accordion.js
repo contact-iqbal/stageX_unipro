@@ -2,6 +2,8 @@ export function initAccordion() {
   const accordions = document.querySelectorAll(".accordion-container")
   const buttons = document.querySelectorAll(".accordion-toggle")
 
+  if(!accordions && !buttons) return
+
   accordions.forEach(acc => {
     const header = acc.querySelector(".accordion-header")
     const style = getComputedStyle(acc)

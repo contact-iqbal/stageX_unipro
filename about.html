@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="src/css/output.css">
+    <script src="https://unpkg.com/lucide@latest"></script>
+</head>
+
+<body>
+    <header class="w-full bg-white fixed z-9999">
+        <div class="flex items-center justify-between p-5 max-w-7xl m-auto">
+            <a href="#" class="font-sans font-bold text-xl text-[#26A2FF]">
+                Unipro.
+            </a>
+            <nav class="text-[#000000] items-center gap-9 flex">
+                <a href="index.html">Home</a>
+                <a href="#" class="font-bold">About</a>
+                <a href="">Resources</a>
+                <a href="">Service</a>
+                <a href="">Contact</a>
+            </nav>
+            <button
+                class="dark-mode-toggle bg-[#1A1A1A] p-1 flex items-center gap-1 text-lg font-semibold rounded-full relative">
+                <div class="bg-white w-8 h-8 rounded-full flex items-center justify-center absolute left-1 transition-[left] duration-400 ease-in-out z-2"
+                    id="iconWrapper">
+                    <i data-lucide="moon" class="fill-[#1A1A1A] opacity-100 transition-[opacity] duration-200"
+                        id="moon"></i>
+                    <i data-lucide="sun" class="fill-[#1A1A1A] absolute opacity-0 transition-[opacity] duration-200"
+                        id="sun"></i>
+                </div>
+                <div class="w-8 h-8">
+                </div>
+                <p
+                    class="theme-text text-white px-2 text-sm opacity-100 transition-[opacity] duration-300 relative h-5">
+                    Dark Mode</p>
+            </button>
+        </div>
+    </header>
+
+    <main class="max-w-7xl m-auto flex flex-col">
+        <section class="h-screen w-full px-8 py-5 flex items-center justify-center">
+            <div class="bg-[#47B0FB] w-full text-white flex items-center p-6 rounded-xl">
+                <div class="flex flex-col gap-4">
+                    <h3 class="text-lg">Our Mission</h3>
+                    <h1 class="text-3xl font-semibold">Focused On <br> Our Medical Journey</h1>
+                    <p>Our mission is focused on one thing—our medical journey. We are dedicated to learning, growing, and navigating healthcare with purpose, compassion, and clarity. Every step we take is guided by commitment, resilience, and the belief that informed care makes a meaningful difference.</p>
+                    <button class="bg-white px-4 py-2 font-bold text-black w-fit rounded-xl">Read More</button>
+                </div>
+                <div class="bg-[url(/src/img/lab.jpg)] aspect-square bg-cover bg-center w-160 rounded-xl"></div>
+            </div>
+        </section>
+        <div class="w-full p-5">
+            <div class="flex flex-col gap-8 items-center bg-[#F6F6F6] p-5 rounded-xl">
+                <div class="flex flex-col gap-4 items-center">
+                    <small class="text-[#009DFF] text-xs text-center font-semibold">Our Success Story</small>
+                    <h1 class="font-bold text-4xl text-center">Our Proven <br> Success Stories</h1>
+                    <p class="text-[#575757] text-center">Our results speak louder than promises. We help clients solve complex challenges, drive measurable growth,<br>and deliver real results through a hands-on, strategic approach.</p>
+                </div>
+                <div class="flex items-center gap-18">
+                    <div class="flex flex-col items-center gap-2 text-[#282828]">
+                        <h2 class="text-3xl font-bold">500K</h2>
+                        <p class="font-semibold">Project Completed</p>
+                    </div>
+                    <div class="flex flex-col items-center gap-2 text-[#282828]">
+                        <h2 class="text-3xl font-bold">20+</h2>
+                        <p class="font-semibold">Years Experienced</p>
+                    </div>
+                    <div class="flex flex-col items-center gap-2 text-[#282828]">
+                        <h2 class="text-3xl font-bold">89%</h2>
+                        <p class="font-semibold">Positive Review</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer class="p-5 flex gap-2 h-60">
+        <div class="flex flex-col justify-between w-90">
+            <h2 class="text-[#26A2FF] text-xl font-bold">Unipro.</h2>
+            <p class="w-80 text-sm">&copy 2025 Viva healthCare by team TekniKarya <br> Terms of Service | Privacy Policy</p>
+        </div>
+        <div class="flex-1 grid grid-cols-4">
+            <ul class="flex flex-col gap-2">
+                <li class="font-bold">Products</li>
+                <li>Product</li>
+                <li>Pricing</li>
+                <li>Partner Ship</li>
+                <li>Request Schedule</li>
+            </ul>
+            <ul class="flex flex-col gap-2">
+                <li class="font-bold">About Us</li>
+                <li>About Viva Healthcare</li>
+                <li>Contact Us</li>
+                <li>Features</li>
+            </ul>
+            <ul class="flex flex-col gap-2">
+                <li class="font-bold">Resources</li>
+                <li>Help Center</li>
+                <li>Start a Trial</li>
+                <li>Blog</li>
+            </ul>
+            <ul class="flex flex-col gap-2">
+                <li class="font-bold">Get In Touch</li>
+                <li>Questions or Feedback</li>
+                <li>Linktree</li>
+                <li class="flex items-center gap-4">
+                    <i data-lucide="facebook" class="stroke-3 fill-black"></i>
+                    <i data-lucide="twitter" class="stroke-3 fill-black"></i>
+                    <i data-lucide="linkedin" class="stroke-3 fill-black"></i>
+                </li>
+            </ul>
+        </div>
+    </footer>
+    <script src="src/js/main.js" type="module"></script>
+</body>
+
+</html>
