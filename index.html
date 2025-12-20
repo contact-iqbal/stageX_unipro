@@ -10,9 +10,7 @@
 </head>
 
 <body>
-
-    <!-- // navbar section -->
-    <header class="w-full fixed bg-white">
+    <header class="w-full bg-white fixed z-9999">
         <div class="flex items-center justify-between p-5 max-w-7xl m-auto">
             <a href="#" class="font-sans font-bold text-xl text-[#26A2FF]">
                 Unipro.
@@ -41,11 +39,8 @@
         </div>
     </header>
 
-
-    <main class="max-w-7xl m-auto flex flex-col gap-2">
-
-        <div class="h-screen w-full flex flex-col" id="wrapper">
-
+    <main class="max-w-7xl m-auto flex flex-col">
+        <section class="h-screen w-full flex flex-col" id="hero">
             <div class="flex-1 grid grid-cols-2 justify-items-center justify-center items-center p-5">
                 <div class="flex flex-col gap-9">
                     <h1 class="text-4xl font-bold leading-13">Find and Get your Health Care <span
@@ -81,66 +76,401 @@
                     </div>
                     <div
                         class="absolute text-xs bg bg-[#47B0FB] px-4 py-6 text-white rounded-lg -z-1 top-6 right-full left-50 w-[223px]">
-                        <span class="font-bold">“ The art of medicine consists in amusing the patient while nature cures
-                            the disease.”</span> - Voltaire</div>
+                        <span class="font-bold">“ The art of medicine consists in amusing the patient while nature cures the disease.”</span> - Voltaire</div>
                 </div>
             </div>
+        </section>
 
-            <div class="grid grid-cols-3 p-5">
-                <div class="flex flex-col gap-4 py-3">
-                    <h2 class="text-2xl font-bold">Your bridge to Better Health <br> Start Your Journey Today</h2>
-                    <button class="flex items-center text-white">
-                        <p class="px-4 py-2 bg-[#0B0B0B] text-sm rounded-full">Our working progress</p>
-                        <div class="px-2 py-2 bg-[#0B0B0B] rounded-full">
-                            <i data-lucide="expand" width="20" height="20"></i>
-                        </div>
-                    </button>
-                    <p class="text-xs text-[#9C9C9C]">Medicine Meets Technology <br> Your Online Health Hub</p>
-                </div>
-                <div class="col-span-2 py-3">
-                    <div class="bg-[#CBE6FA] rounded-lg w-full h-full relative flex">
-                        <div class="flex flex-col justify-between p-4 flex-1">
-                            <div class="w-full flex justify-between">
-                                <h3 class="font-bold text-xl">Our Customer</h3>
-                                <div class="relative">
-                                    <div class="w-8 h-8 bg-white rounded-full border-3 border-[#CBE6FA]"></div>
-                                    <div
-                                        class="w-8 h-8 bg-white rounded-full border-3 border-[#CBE6FA] absolute -left-5 top-0">
-                                    </div>
-                                    <div
-                                        class="w-8 h-8 bg-white rounded-full border-3 border-[#CBE6FA] absolute -left-10 top-0">
-                                    </div>
+        <section class="grid grid-cols-3 p-5" id="stats">
+            <div class="flex flex-col gap-4 py-3">
+                <h2 class="text-2xl font-bold">Your bridge to Better Health <br> Start Your Journey Today</h2>
+                <button class="flex items-center text-white">
+                    <p class="px-4 py-2 bg-[#0B0B0B] text-sm rounded-full">Our working progress</p>
+                    <div class="px-2 py-2 bg-[#0B0B0B] rounded-full">
+                        <i data-lucide="expand" width="20" height="20"></i>
+                    </div>
+                </button>
+                <p class="text-xs text-[#9C9C9C]">Medicine Meets Technology <br> Your Online Health Hub</p>
+            </div>
+            <div class="col-span-2 py-3">
+                <div class="bg-[#CBE6FA] rounded-lg w-full h-full relative flex">
+                    <div class="flex flex-col justify-between p-4 flex-1">
+                        <div class="w-full flex justify-between">
+                            <h3 class="font-bold text-xl">Our Customer</h3>
+                            <div class="relative">
+                                <div class="w-8 h-8 bg-white rounded-full border-3 border-[#CBE6FA]"></div>
+                                <div
+                                    class="w-8 h-8 bg-white rounded-full border-3 border-[#CBE6FA] absolute -left-5 top-0">
+                                </div>
+                                <div
+                                    class="w-8 h-8 bg-white rounded-full border-3 border-[#CBE6FA] absolute -left-10 top-0">
                                 </div>
                             </div>
-                            <div class="flex justify-between items-end w-full">
-                                <div class="flex flex-col">
-                                    <p class="text-2xl font-semibold">170K+</p>
-                                    <p class="text-sm">Happy Clients</p>
-                                </div>
-                                <a href="#" class="text-xs font-semibold">View Testimonials</a>
-                            </div>
                         </div>
-                        <div class="flex flex-col left-[50%] h-full">
-                            <div class="triangle-reverse flex-1 w-10"></div>
-                            <div class="triangle flex-1 w-10"></div>
+                        <div class="flex justify-between items-end flex w-full">
+                            <div class="flex flex-col">
+                                <p class="text-2xl font-semibold">170K+</p>
+                                <p class="text-sm">Happy Clients</p>
+                            </div>
+                            <a href="#" class="text-xs font-semibold">View Testimonials</a>
                         </div>
-                        <div class="flex items-center justify-center p-4 flex-1 gap-2">
-                            <div class="h-25 w-25 rounded-full text-black border-3 border-[#47B0FB] p-2">
-                                <p
-                                    class="flex items-center justify-center bg-white w-full h-full rounded-full text-lg font-semibold">
-                                    89%</p>
-                            </div>
-                            <div class="flex flex-col items-start">
-                                <p class="text-lg font-semibold">Successfull Rate</p>
-                                <span class="text-sm">Healing Success</span>
-                            </div>
+                    </div>
+                    <div class="flex flex-col left-[50%] h-full">
+                        <div class="triangle-reverse flex-1 w-10"></div>
+                        <div class="triangle flex-1 w-10"></div>
+                    </div>
+                    <div class="flex items-center justify-center p-4 flex-1 gap-2">
+                        <div class="h-25 w-25 rounded-full text-black border-3 border-[#47B0FB] p-2">
+                            <p
+                                class="flex items-center justify-center bg-white w-full h-full rounded-full text-lg font-semibold">
+                                89%</p>
+                        </div>
+                        <div class="flex flex-col items-start">
+                            <p class="text-lg font-semibold">Successfull Rate</p>
+                            <span class="text-sm">Healing Success</span>
                         </div>
                     </div>
                 </div>
             </div>
+        </section>
 
-        </div>
+        <section class="h-screen w-full flex flex-col" id="wrapper" id="doctor">
+            <div class="flex-1 grid grid-cols-2 justify-items-center justify-center items-center p-5">
+                <div class="w-full h-full px-2 py-5 flex items-center relative">
+                    <div class="h-90 w-80 bg-[url(/src/img/female-black-doctor.jpg)] bg-bottom bg-cover bg-no-repeat rounded-tr-4xl rounded-bl-4xl"></div>
+                    <div class="absolute flex flex-col bg-white w-fit p-4 gap-5 rounded-xl shadow-[0_0_6px_rgba(0,0,0,.2)] left-40 bottom-0">
+                        <div class="bg-white rounded-xl p-2 shadow-[0_0_6px_rgba] absolute -top-6 -left-6">
+                            <div class="bg-[#47B0FB] p-1 flex items-center justify-center rounded-full">
+                                <i data-lucide="check" class="text-white stroke-4"></i>
+                            </div>
+                        </div>
+                        <div class="text-end text-[#454545] flex flex-col">
+                            <h4 class="font-semibold text-sm">Available Doctor</h4>
+                            <small class="text-[10px]">Select to work with</small>
+                        </div>  
+                        <div class="flex items-center gap-3">
+                            <div class="w-fit relative">
+                                <div class="bg-[url(/src/img/doctor-1.png)] w-10 h-10 rounded-full bg-top bg-cover bg-[#BEE3FF]"></div>
+                                <div class=" bg-[#CFFF30] w-fit p-1 rounded-full absolute bottom-0 -right-1">
+                                    <i data-lucide="shield" width="12" height="12" class="text-white fill-white"></i>
+                                </div>
+                            </div>
+                            <div class="flex flex-col">
+                                <strong class="font-semibold text-[10px]">Dr. Johnny Sins</strong>
+                                <small class="text-[#686868] text-[8px]">Psychology Self illness desaese</small>
+                            </div>
+                        </div>
+                        <div class="flex items-center gap-3 opacity-80">
+                            <div class="w-fit relative">
+                                <div class="bg-[url(/src/img/doctor-1.png)] w-10 h-10 rounded-full bg-top bg-cover bg-[#BEE3FF]"></div>
+                                <div class=" bg-[#CFFF30] w-fit p-1 rounded-full absolute bottom-0 -right-1">
+                                    <i data-lucide="shield" width="12" height="12" class="text-white fill-white"></i>
+                                </div>
+                            </div>
+                            <div class="flex flex-col">
+                                <strong class="font-semibold text-[10px]">Dr. Johnny Sins</strong>
+                                <small class="text-[#686868] text-[8px]">Psychology Self illness desaese</small>
+                            </div>
+                        </div>
+                        <div class="flex items-center gap-3 opacity-60">
+                            <div class="w-fit relative">
+                                <div class="bg-[url(/src/img/doctor-1.png)] w-10 h-10 rounded-full bg-top bg-cover bg-[#BEE3FF]"></div>
+                                <div class=" bg-[#CFFF30] w-fit p-1 rounded-full absolute bottom-0 -right-1">
+                                    <i data-lucide="shield" width="12" height="12" class="text-white fill-white"></i>
+                                </div>
+                            </div>
+                            <div class="flex flex-col">
+                                <strong class="font-semibold text-[10px]">Dr. Johnny Sins</strong>
+                                <small class="text-[#686868] text-[8px]">Psychology Self illness desaese</small>
+                            </div>
+                        </div>
+                        <div class="flex items-center gap-3 opacity-40">
+                            <div class="w-fit relative">
+                                <div class="bg-[url(/src/img/doctor-1.png)] w-10 h-10 rounded-full bg-top bg-cover bg-[#BEE3FF]"></div>
+                                <div class=" bg-[#CFFF30] w-fit p-1 rounded-full absolute bottom-0 -right-1">
+                                    <i data-lucide="shield" width="12" height="12" class="text-white fill-white"></i>
+                                </div>
+                            </div>
+                            <div class="flex flex-col">
+                                <strong class="font-semibold text-[10px]">Dr. Johnny Sins</strong>
+                                <small class="text-[#686868] text-[8px]">Psychology Self illness desaese</small>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="flex items-end flex w-full h-full justify-center flex-col gap-5">
+                    <small class="text-[#47B0FB] font-semibold text-lg h-fit w-fit">Find Doctors</small>
+                    <h1 class="text-end font-bold text-4xl">Consult With us Anytime, <br> Anywhere by click</h1>
+                    <p class="text-[#4E4E4E] text-end">
+                        Whether you need expert advice or a follow-up consultation, our experienced medical team is here for you, delivering personalized, confidential care through modern technology—no travel or long waits required.
+                    </p>
+                    <ul class="flex flex-col items-end flex gap-3">
+                        <li class="flex flex-row-reverse items-center gap-2">
+                            <div class="p-1 bg-[#009DFF] rounded-full">
+                                <i data-lucide="check-check" class="text-white" width="16" height="16"></i>
+                            </div>
+                            <p class="font-semibold">Expert medical advice</p>
+                        </li>
+                        <li class="flex flex-row-reverse items-center gap-2">
+                            <div class="p-1 bg-[#009DFF] rounded-full">
+                                <i data-lucide="check-check" class="text-white" width="16" height="16"></i>
+                            </div>
+                            <p class="font-semibold">Secure online consultations</p>
+                        </li>
+                        <li class="flex flex-row-reverse items-center gap-2">
+                            <div class="p-1 bg-[#009DFF] rounded-full">
+                                <i data-lucide="check-check" class="text-white" width="16" height="16"></i>
+                            </div>
+                            <p class="font-semibold">No travel, no waiting</p>
+                        </li>
+                    </ul>
+                    <a href="" class="px-6 py-3 bg-[#009DFF] font-semibold text-white flex items-center gap-4 rounded-b-2xl rounded-tl-2xl ">
+                        <span>See Specialities</span>
+                        <i data-lucide="chevron-right"></i>
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <section class="flex items-center justify-between p-5" id="service-header">
+            <h1 class="font-bold text-3xl">Our Services <br> Reliable</h1>
+            <p class="text-xs text-[#515151] w-120 text-end">Our services make healthcare simple and accessible, offering online consultations and follow-up care through secure digital platforms—so you can get professional medical support wherever you are.</p>
+        </section>
+
+        <section class="p-10 grid grid-cols-3 gap-1" id="service-grid">
+            <div class="aspect-square bg-[#47B0FB] text-white flex items-center justify-center gap-3 flex-col rounded-xl p-3">
+                <i data-lucide="briefcase-medical" class="w-12 h-12"></i>
+                <h2 class="text-xl font-bold">General Medical Consultation</h2>
+                <p class="text-center">Comprehensive check-ups and diagnosis for common illnesses, chronic conditions, and overall health concerns, provided by experienced physicians.</p>
+            </div>
+            <div class="aspect-square bg-[#47B0FB] text-white flex items-center justify-center gap-3 flex-col rounded-xl p-3 opacity-80">
+                <i data-lucide="test-tube-diagonal" class="w-12 h-12"></i>
+                <h2 class="text-xl font-bold">Diagnostic & Laboratory Services</h2>
+                <p class="text-center">Accurate blood tests, imaging, and diagnostic screenings using modern equipment to support timely and reliable medical decisions.</p>
+            </div>
+            <div class="aspect-square bg-[#47B0FB] text-white flex items-center justify-center gap-3 flex-col rounded-xl p-3 opacity-60">
+                <i data-lucide="heart-plus" class="w-12 h-12"></i>
+                <h2 class="text-xl font-bold">Preventive Health Care</h2>
+                <p class="text-center">Routine health screenings, vaccinations, and wellness programs focused on early detection and long-term disease prevention.</p>
+            </div>
+            <div class="aspect-square bg-[#47B0FB] text-white flex items-center justify-center gap-3 flex-col rounded-xl p-3 opacity-40">
+                <i data-lucide="stethoscope" class="w-12 h-12"></i>
+                <h2 class="text-xl font-bold">Chronic Disease Management</h2>
+                <p class="text-center">Personalized care plans for conditions such as diabetes, hypertension, asthma, and heart disease, with ongoing monitoring and support.</p>
+            </div>
+            <div class="aspect-square bg-[#47B0FB] text-white flex items-center justify-center gap-3 flex-col rounded-xl p-3 opacity-40">
+                <i data-lucide="venus" class="w-12 h-12"></i>
+                <h2 class="text-xl font-bold">Women’s Health Services</h2>
+                <p class="text-center">Specialized care including gynecological exams, prenatal consultations, family planning, and hormonal health management.</p>
+            </div>
+            <div class="aspect-square text-[#676767] flex items-center justify-center gap-3 flex-col rounded-xl p-3 opacity-40">
+                <i data-lucide="venus" class="w-12 h-12"></i>
+                <a href="#" class="text-xl font-bold underline">See more</a>
+                <p class="text-center">Look Trough our service <br> available only for you</p>
+            </div>
+        </section>
+        <section class="px-2 py-1 bg-[#47B0FB] text-white overflow-hidden w-full">
+            <div class="animate-carousel w-max flex items-center whitespace-nowrap">
+                <!-- group 1 -->
+                <p class="me-10">Viva</p>
+                <div class="h-2 w-2 bg-white rounded-full shrink-0 me-10"></div>
+                <p class="me-10">Health Care</p>
+                <div class="h-2 w-2 bg-white rounded-full shrink-0 me-10"></div>
+
+                <!-- group 2 (duplicate) -->
+                <p class="me-10">Viva</p>
+                <div class="h-2 w-2 bg-white rounded-full shrink-0 me-10"></div>
+                <p class="me-10">Health Care</p>
+                <div class="h-2 w-2 bg-white rounded-full shrink-0 me-10"></div>
+                <!-- group 1 -->
+                <p class="me-10">Viva</p>
+                <div class="h-2 w-2 bg-white rounded-full shrink-0 me-10"></div>
+                <p class="me-10">Health Care</p>
+                <div class="h-2 w-2 bg-white rounded-full shrink-0 me-10"></div>
+
+                <!-- group 1 -->
+                <p class="me-10">Viva</p>
+                <div class="h-2 w-2 bg-white rounded-full shrink-0 me-10"></div>
+                <p class="me-10">Health Care</p>
+                <div class="h-2 w-2 bg-white rounded-full shrink-0 me-10"></div>
+
+                <!-- group 2 (duplicate) -->
+                <p class="me-10">Viva</p>
+                <div class="h-2 w-2 bg-white rounded-full shrink-0 me-10"></div>
+                <p class="me-10">Health Care</p>
+                <div class="h-2 w-2 bg-white rounded-full shrink-0 me-10"></div>
+
+                <!-- group 1 -->
+                <p class="me-10">Viva</p>
+                <div class="h-2 w-2 bg-white rounded-full shrink-0 me-10"></div>
+                <p class="me-10">Health Care</p>
+                <div class="h-2 w-2 bg-white rounded-full shrink-0 me-10"></div>
+
+                <!-- group 2 (duplicate) -->
+                <p class="me-10">Viva</p>
+                <div class="h-2 w-2 bg-white rounded-full shrink-0 me-10"></div>
+                <p class="me-10">Health Care</p>
+                <div class="h-2 w-2 bg-white rounded-full shrink-0 me-10"></div>
+                <!-- group 1 -->
+                <p class="me-10">Viva</p>
+                <div class="h-2 w-2 bg-white rounded-full shrink-0 me-10"></div>
+                <p class="me-10">Health Care</p>
+                <div class="h-2 w-2 bg-white rounded-full shrink-0 me-10"></div>
+
+                <!-- group 1 -->
+                <p class="me-10">Viva</p>
+                <div class="h-2 w-2 bg-white rounded-full shrink-0 me-10"></div>
+                <p class="me-10">Health Care</p>
+                <div class="h-2 w-2 bg-white rounded-full shrink-0 me-10"></div>
+
+                <!-- group 2 (duplicate) -->
+                <p class="me-10">Viva</p>
+                <div class="h-2 w-2 bg-white rounded-full shrink-0 me-10"></div>
+                <p class="me-10">Health Care</p>
+                <div class="h-2 w-2 bg-white rounded-full shrink-0 me-10"></div>
+            </div>
+        </section>
+
+        <section class="h-screen w-full flex flex-col justify-center items-between p-20 bg-[#E5ECF9]">
+            <div class="flex items-center justify-between p-5" id="service-header">
+                <h1 class="font-bold text-3xl">Our Patient Story</h1>
+                <p class="text-xs text-[#515151] w-120 text-end">Every patient has a story. In this space, we share real experiences that reflect our commitment to compassionate, personalized care and the meaningful relationships we build with our patients.</p>
+            </div>
+            <div class="grid grid-cols-3 gap-5">
+                <div class="aspect-square bg-[url(/src/img/story-1.jpg)] bg-cover bg-top rounded-3xl p-6 flex items-end ">
+                    <div class="bg-white w-fit p-3 rounded-xl">
+                        <h3 class="font-bold max-w-fit text-lg">When Care Made <br> the Difference</h3>
+                        <p class="text-xs text-[#575757]">One patient’s journey <br> toward better health</p>
+                    </div>
+                </div>
+                <div class="aspect-square bg-[url(/src/img/story-2.jpg)] bg-cover bg-top rounded-3xl p-6 flex items-center justify-center">
+                    <div class="bg-white w-fit p-3 rounded-xl">
+                        <p class="text-xs text-[#575757]">Support, treatment, and <br> a path forward</p>
+                        <h3 class="font-bold max-w-fit text-lg">To New Chapter</h3>
+                    </div>
+                </div>
+                <div class="aspect-square bg-[url(/src/img/story-3.jpg)] bg-cover bg-top rounded-3xl p-6 flex items-end">
+                    <div class="bg-white w-full p-3 rounded-xl">
+                        <h3 class="font-bold max-w-fit text-lg">Mariadi’s Turning Point</h3>
+                        <p class="text-xs text-[#575757]">Finding answers through compassionate, consistent care</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="bg-linear-to-b from-[#E5ECF9] to-[#FFFFFF] flex p-10 gap-10">
+            <div class="flex flex-col gap-4 w-80">
+                <small class="text-[#26A2FF] font-bold">FAQs</small>
+                <h1 class="text-3xl font-bold">Frequently <br> Asked Questions</h1>
+                <p class="text-sm text-[#666666]">Our FAQ section answers common questions about appointments, services, insurance, and care—helping you feel informed and confident every step of the way.</p>
+            </div>
+            <div class="flex-1 flex flex-col gap-3">
+            <div class="flex-1 flex flex-col gap-3">
+                <div class="bg-white border-3 border-[#E7E9EB] rounded-lg accordion-container overflow-hidden transition-all duration-200">
+                    <div class="accordion-header flex items-center justify-between p-2">
+                        <h4 class="font-semibold">How do I book an appointment?</h4>
+                        <button class="accordion-toggle">
+                            <i data-lucide="plus" width="14" height="14" class="transition-all duration-200"></i>
+                        </button>
+                    </div>
+                    <div class="accordion-content p-2 text-sm text-[#636363]">
+                        Nothing to see.
+                    </div>
+                </div>
+                <div class="bg-white border-3 border-[#E7E9EB] rounded-lg accordion-container overflow-hidden transition-all duration-200">
+                    <div class="accordion-header flex items-center justify-between p-2">
+                        <h4 class="font-semibold">What services do you offer?</h4>
+                        <button class="accordion-toggle">
+                            <i data-lucide="plus" width="14" height="14" class="transition-all duration-200"></i>
+                        </button>
+                    </div>
+                    <div class="accordion-content p-2 text-sm text-[#636363]">
+                        We provide general consultations, preventive care, diagnostic services, chronic disease management, and more. Visit our Services page for full details.
+                    </div>
+                </div>
+                <div class="bg-white border-3 border-[#E7E9EB] rounded-lg accordion-container overflow-hidden transition-all duration-200">
+                    <div class="accordion-header flex items-center justify-between p-2">
+                        <h4 class="font-semibold">Do you accept insurance?</h4>
+                        <button class="accordion-toggle">
+                            <i data-lucide="plus" width="14" height="14" class="transition-all duration-200"></i>
+                        </button>
+                    </div>
+                    <div class="accordion-content p-2 text-sm text-[#636363]">
+                        Yes, we do.
+                    </div>
+                </div>
+                <div class="bg-white border-3 border-[#E7E9EB] rounded-lg accordion-container overflow-hidden transition-all duration-200">
+                    <div class="accordion-header flex items-center justify-between p-2">
+                        <h4 class="font-semibold">What should I bring to my appointment?</h4>
+                        <button class="accordion-toggle">
+                            <i data-lucide="plus" width="14" height="14" class="transition-all duration-200"></i>
+                        </button>
+                    </div>
+                    <div class="accordion-content p-2 text-sm text-[#636363]">
+                        Nothing to bring here.
+                    </div>
+                </div>
+                <div class="bg-white border-3 border-[#E7E9EB] rounded-lg accordion-container overflow-hidden transition-all duration-200">
+                    <div class="accordion-header flex items-center justify-between p-2">
+                        <h4 class="font-semibold">Do you offer telemedicine consultations?</h4>
+                        <button class="accordion-toggle">
+                            <i data-lucide="plus" width="14" height="14" class="transition-all duration-200"></i>
+                        </button>
+                    </div>
+                    <div class="accordion-content p-2 text-sm text-[#636363]">
+                        Yes we do.
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="p-5">
+            <div class="bg-[#8BCDFF] h-[380px] rounded-4xl relative flex items-center justify-end">
+                <img src="src/img/promotion-doctor.png" alt="" class="w-135 absolute bottom-0 left-10"> 
+                <div class="flex flex-col gap-3 w-150 text-start px-20">
+                    <h1 class="text-3xl font-bold">Free Online Consultations Starting at $50/month</h1>
+                    <p class="text-[#191919]">Decide what specific services or consultations you’ll offer for free. This could be a brief introducy call, a premilenary assessment, or a quick Q&A Session.</p>
+                    <a href="#" class="px-4 py-2 bg-white rounded-full w-fit">Contact Us</a>
+                </div>
+            </div>
+        </section>
     </main>
+    <footer class="p-5 flex gap-2">
+        <div class="flex flex-col justify-between w-80">
+            <h2 class="text-[#26A2FF] text-xl font-bold">Unipro.</h2>
+            <p class="w-70">&copy 2025 Viva healthCare by team TekniKarya <br> Terms of Service | Privacy Policy</p>
+        </div>
+        <div class="flex-1 grid grid-cols-4">
+            <ul class="flex flex-col gap-2">
+                <li class="font-bold">Products</li>
+                <li>Product</li>
+                <li>Pricing</li>
+                <li>Partner Ship</li>
+                <li>Request Schedule</li>
+            </ul>
+            <ul class="flex flex-col gap-2">
+                <li class="font-bold">About Us</li>
+                <li>About Viva Healthcare</li>
+                <li>Contact Us</li>
+                <li>Features</li>
+            </ul>
+            <ul class="flex flex-col gap-2">
+                <li class="font-bold">Resources</li>
+                <li>Help Center</li>
+                <li>Start a Trial</li>
+                <li>Blog</li>
+            </ul>
+            <ul class="flex flex-col gap-2">
+                <li class="font-bold">Get In Touch</li>
+                <li>Questions or Feedback</li>
+                <li>Linktree</li>
+                <li class="flex items-center gap-4">
+                    <i data-lucide="facebook" class="stroke-3 fill-black"></i>
+                    <i data-lucide="twitter" class="stroke-3 fill-black"></i>
+                    <i data-lucide="linkedin" class="stroke-3 fill-black"></i>
+                </li>
+            </ul>
+        </div>
+    </footer>
     <script src="src/js/main.js" type="module"></script>
 </body>
 

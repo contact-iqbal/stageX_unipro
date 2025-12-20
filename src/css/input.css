@@ -2,7 +2,7 @@
 
 @import 'tailwindcss';
 
-@theme { --font-sans: "Poppins", sans-serif; }
+@theme { --font-sans: "Poppins", sans-serif; --animate-carousel: carousel 20s linear infinite; }
 
 @variant dark (.dark &);
 
@@ -14,4 +14,13 @@
 .triangle-reverse{
     clip-path: polygon(10% 0%, 90% 0%, 50% 100%);
     background-color: #fff;
+}
+
+@keyframes carousel {
+    0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
 }
