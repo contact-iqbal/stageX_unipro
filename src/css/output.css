@@ -252,6 +252,9 @@
   .flex {
     display: flex;
   }
+  .hidden {
+    display: none;
+  }
   .grid {
     display: grid;
   }

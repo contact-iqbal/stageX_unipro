@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,108 +8,140 @@
     <link rel="stylesheet" href="src/css/output.css">
     <script src="https://unpkg.com/lucide@latest"></script>
 </head>
+
 <body>
+
+    <!-- // navbar section -->
     <header class="w-full fixed bg-white">
         <div class="flex items-center justify-between p-5 max-w-7xl m-auto">
             <a href="#" class="font-sans font-bold text-xl text-[#26A2FF]">
                 Unipro.
             </a>
-            <nav class="text-[#000000] flex items-center gap-5">
+            <nav class="text-[#000000] items-center gap-9 flex">
                 <a href="">About</a>
                 <a href="">Resources</a>
                 <a href="">Service</a>
                 <a href="">Contact</a>
             </nav>
-            <button class="dark-mode-toggle bg-[#1A1A1A] p-1 flex items-center gap-1 text-lg font-semibold rounded-full relative">
-                <div class="bg-white w-8 h-8 rounded-full flex items-center justify-center absolute left-1 transition-[left] duration-400 ease-in-out z-2" id="iconWrapper">
-                    <i data-lucide="moon" class="fill-[#1A1A1A] opacity-100 transition-[opacity] duration-200" id="moon"></i>
-                    <i data-lucide="sun" class="fill-[#1A1A1A] absolute opacity-0 transition-[opacity] duration-200" id="sun"></i>
+            <button
+                class="dark-mode-toggle bg-[#1A1A1A] p-1 flex items-center gap-1 text-lg font-semibold rounded-full relative">
+                <div class="bg-white w-8 h-8 rounded-full flex items-center justify-center absolute left-1 transition-[left] duration-400 ease-in-out z-2"
+                    id="iconWrapper">
+                    <i data-lucide="moon" class="fill-[#1A1A1A] opacity-100 transition-[opacity] duration-200"
+                        id="moon"></i>
+                    <i data-lucide="sun" class="fill-[#1A1A1A] absolute opacity-0 transition-[opacity] duration-200"
+                        id="sun"></i>
                 </div>
                 <div class="w-8 h-8">
                 </div>
-                <p class="theme-text text-white px-2 text-sm opacity-100 transition-[opacity] duration-300 relative h-5">Dark Mode</p>
+                <p
+                    class="theme-text text-white px-2 text-sm opacity-100 transition-[opacity] duration-300 relative h-5">
+                    Dark Mode</p>
             </button>
         </div>
     </header>
+
+
     <main class="max-w-7xl m-auto flex flex-col gap-2">
-        <div class="h-screen grid grid-cols-2 justify-items-center justify-center items-center p-5">
-            <div class="flex flex-col gap-9">
-                <h1 class="text-4xl font-bold leading-13">Find and Get your Health Care <span class="bg-linear-to-r from-[#47B0FB] to-[#FFFFFF]">Faster.</span></h1>
-                <p>Navigate Your health together, Your Trusted Medical Resource</p>
-                <a href="" class="flex items-center gap-2">
-                    <p>Get Started Now</p>
-                    <div class="h-6 w-6 border-2 border-black rounded-full flex items-center justify-center">
-                        <i data-lucide="arrow-up-right" height="16" width="16"></i>
+
+        <div class="h-screen w-full flex flex-col" id="wrapper">
+
+            <div class="flex-1 grid grid-cols-2 justify-items-center justify-center items-center p-5">
+                <div class="flex flex-col gap-9">
+                    <h1 class="text-4xl font-bold leading-13">Find and Get your Health Care <span
+                            class="bg-linear-to-r from-[#47B0FB] to-[#FFFFFF]">Faster.</span></h1>
+                    <p>Navigate Your health together, Your Trusted Medical Resource</p>
+                    <a href="" class="flex items-center gap-2">
+                        <p>Get Started Now</p>
+                        <div class="h-6 w-6 border-2 border-black rounded-full flex items-center justify-center">
+                            <i data-lucide="arrow-up-right" height="16" width="16"></i>
+                        </div>
+                    </a>
+                </div>
+                <div class="relative flex items-center justify-center w-[300px]">
+                    <img src="src/img/arfrican-doctor.png" alt="" class="w-[200px]">
+                    <div
+                        class="absolute flex flex-col gap-3 rounded-xl w-full p-3 rounded-xl bg-linear-to-b from-[#74C4FF35] to-[#CFE0ED35] backdrop-blur-[10px] -bottom-2 -left-1/2">
+                        <div class="flex items-center justify-between">
+                            <div class="flex items-center gap-1">
+                                <div
+                                    class="h-10 w-10 bg-[url(/src/img/arfrican-doctor.png)] bg-top bg-no-repeat bg-cover rounded-full">
+                                </div>
+                                <div class="flex flex-col items-start">
+                                    <p class="font-bold text-sm">Dr. Richard Lahadalia</p>
+                                    <span class="text-xs">Diagnosing illnes</span>
+                                </div>
+                            </div>
+                            <div class="h-10 w-10 flex items-center justify-center bg-white rounded-full bg-white">
+                                <i data-lucide="video" class="fill-[#79ADD4] text-[#79ADD4] opacity-70"></i>
+                            </div>
+                        </div>
+                        <input type="text" class="bg-white px-3 py-2 text-[10px] placeholder:text-sm mt-3 rounded-lg"
+                            placeholder="Let me tell your symtomps">
                     </div>
-                </a>
+                    <div
+                        class="absolute text-xs bg bg-[#47B0FB] px-4 py-6 text-white rounded-lg -z-1 top-6 right-full left-50 w-[223px]">
+                        <span class="font-bold">“ The art of medicine consists in amusing the patient while nature cures
+                            the disease.”</span> - Voltaire</div>
+                </div>
             </div>
-            <div class="relative flex items-center justify-center w-[300px]">
-                <img src="src/img/arfrican-doctor.png" alt="" class="w-[200px]">
-                <div class="absolute flex flex-col gap-3 rounded-xl w-full p-3 rounded-xl bg-linear-to-b from-[#74C4FF35] to-[#CFE0ED35] backdrop-blur-[10px] -bottom-2 -left-1/2">
-                    <div class="flex items-center justify-between">
-                        <div class="flex items-center gap-1">
-                            <div class="h-10 w-10 bg-[url(/src/img/arfrican-doctor.png)] bg-top bg-no-repeat bg-cover rounded-full"></div>
+
+            <div class="grid grid-cols-3 p-5">
+                <div class="flex flex-col gap-4 py-3">
+                    <h2 class="text-2xl font-bold">Your bridge to Better Health <br> Start Your Journey Today</h2>
+                    <button class="flex items-center text-white">
+                        <p class="px-4 py-2 bg-[#0B0B0B] text-sm rounded-full">Our working progress</p>
+                        <div class="px-2 py-2 bg-[#0B0B0B] rounded-full">
+                            <i data-lucide="expand" width="20" height="20"></i>
+                        </div>
+                    </button>
+                    <p class="text-xs text-[#9C9C9C]">Medicine Meets Technology <br> Your Online Health Hub</p>
+                </div>
+                <div class="col-span-2 py-3">
+                    <div class="bg-[#CBE6FA] rounded-lg w-full h-full relative flex">
+                        <div class="flex flex-col justify-between p-4 flex-1">
+                            <div class="w-full flex justify-between">
+                                <h3 class="font-bold text-xl">Our Customer</h3>
+                                <div class="relative">
+                                    <div class="w-8 h-8 bg-white rounded-full border-3 border-[#CBE6FA]"></div>
+                                    <div
+                                        class="w-8 h-8 bg-white rounded-full border-3 border-[#CBE6FA] absolute -left-5 top-0">
+                                    </div>
+                                    <div
+                                        class="w-8 h-8 bg-white rounded-full border-3 border-[#CBE6FA] absolute -left-10 top-0">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="flex justify-between items-end w-full">
+                                <div class="flex flex-col">
+                                    <p class="text-2xl font-semibold">170K+</p>
+                                    <p class="text-sm">Happy Clients</p>
+                                </div>
+                                <a href="#" class="text-xs font-semibold">View Testimonials</a>
+                            </div>
+                        </div>
+                        <div class="flex flex-col left-[50%] h-full">
+                            <div class="triangle-reverse flex-1 w-10"></div>
+                            <div class="triangle flex-1 w-10"></div>
+                        </div>
+                        <div class="flex items-center justify-center p-4 flex-1 gap-2">
+                            <div class="h-25 w-25 rounded-full text-black border-3 border-[#47B0FB] p-2">
+                                <p
+                                    class="flex items-center justify-center bg-white w-full h-full rounded-full text-lg font-semibold">
+                                    89%</p>
+                            </div>
                             <div class="flex flex-col items-start">
-                                <p class="font-bold text-sm">Dr. Richard Lahadalia</p>
-                                <span class="text-xs">Diagnosing illnes</span>
+                                <p class="text-lg font-semibold">Successfull Rate</p>
+                                <span class="text-sm">Healing Success</span>
                             </div>
-                        </div>
-                        <div class="h-10 w-10 flex items-center justify-center bg-white rounded-full bg-white">
-                            <i data-lucide="video" class="fill-[#79ADD4] text-[#79ADD4] opacity-70"></i>
-                        </div>
-                    </div>
-                    <input type="text" class="bg-white px-3 py-2 text-[10px] placeholder:text-sm mt-3 rounded-lg" placeholder="Let me tell your symtomps">
-                </div>
-                <div class="absolute text-xs bg bg-[#47B0FB] px-4 py-6 text-white rounded-lg -z-1 top-6 right-full left-50 w-[223px]"><span class="font-bold">“ The art of medicine consists in amusing the patient while nature cures the disease.”</span> - Voltaire</div>
-            </div>
-        </div>
-        <div class="grid grid-cols-3 p-5">
-            <div class="flex flex-col gap-4 py-3">
-                <h2 class="text-2xl font-bold">Your bridge to Better Health <br> Start Your Journey Today</h2>
-                <button class="flex items-center text-white">
-                    <p class="px-4 py-2 bg-[#0B0B0B] text-sm rounded-full">Our working progress</p>
-                    <div class="px-2 py-2 bg-[#0B0B0B] rounded-full">
-                        <i data-lucide="expand" width="20" height="20"></i>
-                    </div>
-                </button>
-                <p class="text-xs text-[#9C9C9C]">Medicine Meets Technology <br> Your Online Health Hub</p>
-            </div>
-            <div class="col-span-2 py-3">
-                <div class="bg-[#CBE6FA] rounded-lg w-full h-full relative flex">
-                    <div class="flex flex-col justify-between p-4 flex-1">
-                        <div class="w-full flex justify-between">
-                            <h3 class="font-bold text-xl">Our Customer</h3>
-                            <div class="relative">
-                                <div class="w-8 h-8 bg-white rounded-full border-3 border-[#CBE6FA]"></div>
-                                <div class="w-8 h-8 bg-white rounded-full border-3 border-[#CBE6FA] absolute -left-5 top-0"></div>
-                                <div class="w-8 h-8 bg-white rounded-full border-3 border-[#CBE6FA] absolute -left-10 top-0"></div>
-                            </div>
-                        </div>
-                        <div class="flex justify-between items-end w-full">
-                            <div class="flex flex-col">
-                                <p class="text-2xl font-semibold">170K+</p>
-                                <p class="text-sm">Happy Clients</p>
-                            </div>
-                            <a href="#" class="text-xs font-semibold">View Testimonials</a>
-                        </div>
-                    </div>
-                    <div class="flex flex-col left-[50%] h-full">
-                        <div class="triangle-reverse flex-1 w-10"></div>
-                        <div class="triangle flex-1 w-10"></div>
-                    </div>
-                    <div class="flex items-center justify-center p-4 flex-1 gap-2">
-                        <div class="h-25 w-25 rounded-full text-black border-3 border-[#47B0FB] p-2">
-                            <p class="flex items-center justify-center bg-white w-full h-full rounded-full text-lg font-semibold">89%</p>
-                        </div>
-                        <div class="flex flex-col items-start">
-                            <p class="text-lg font-semibold">Successfull Rate</p>
-                            <span class="text-sm">Healing Success</span>
                         </div>
                     </div>
                 </div>
             </div>
+
         </div>
     </main>
-<script src="src/js/main.js" type="module"></script>
+    <script src="src/js/main.js" type="module"></script>
 </body>
+
 </html>
