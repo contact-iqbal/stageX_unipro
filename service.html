@@ -10,45 +10,73 @@
 </head>
 
 <body>
-    <header class="w-full bg-white fixed z-9999 h-20">
-        <div class="flex items-center justify-between p-5 max-w-7xl m-auto">
-            <a href="#" class="font-sans font-bold text-xl text-[#26A2FF]">
+
+    <!--// start of navigation -->
+    <header class="w-full bg-white fixed z-3 h-20 z-2">
+        <div class="flex items-center justify-none lg:justify-between p-5 max-w-7xl m-auto relative z-3">
+            <a href="#" class="font-sans font-bold text-2xl text-[#26A2FF]">
                 Unipro.
             </a>
-            <nav class="text-[#000000] items-center gap-9 flex">
+            <nav class="text-[#000000] items-center gap-9 hidden lg:flex">
                 <a href="index.html">Home</a>
-                <a href="about.html">About</a>
+                <a href="about.html" class="font-bold">About</a>
                 <a href="resources.html">Resources</a>
-                <a href="#" class="font-bold">Service</a>
+                <a href="service.html">Service</a>
                 <a href="">Contact</a>
             </nav>
-            <button
-                class="dark-mode-toggle bg-[#1A1A1A] p-1 flex items-center gap-1 text-lg font-semibold rounded-full relative">
-                <div class="bg-white w-8 h-8 rounded-full flex items-center justify-center absolute left-1 transition-[left] duration-400 ease-in-out z-2"
-                    id="iconWrapper">
-                    <i data-lucide="moon" class="fill-[#1A1A1A] opacity-100 transition-[opacity] duration-200"
-                        id="moon"></i>
-                    <i data-lucide="sun" class="fill-[#1A1A1A] absolute opacity-0 transition-[opacity] duration-200"
-                        id="sun"></i>
-                </div>
-                <div class="w-8 h-8">
-                </div>
-                <p
-                    class="theme-text text-white px-2 text-sm opacity-100 transition-[opacity] duration-300 relative h-5">
-                    Dark Mode</p>
-            </button>
+
+            <div class="w-full lg:max-w-fit max-w-none lg:w-full h-full flex items-center justify-end gap-1">
+                <button
+                    class="dark-mode-toggle bg-[#1A1A1A] p-1 flex items-center gap-1 text-lg font-semibold rounded-full relative">
+                    <div class="bg-white w-8 h-8 rounded-full flex items-center justify-center absolute left-1 transition-[left] duration-400 ease-in-out z-2"
+                        id="iconWrapper">
+                        <i data-lucide="moon" class="fill-[#1A1A1A] opacity-100 transition-[opacity] duration-200"
+                            id="moon"></i>
+                        <i data-lucide="sun" class="fill-[#1A1A1A] absolute opacity-0 transition-[opacity] duration-200"
+                            id="sun"></i>
+                    </div>
+                    <div class="w-8 h-8">
+                    </div>
+                    <p
+                        class="theme-text text-white px-2 text-sm opacity-100 transition-[opacity] duration-300 relative h-5">
+                        Dark Mode</p>
+                </button>
+
+                <button class="lg:hidden p-2 rounded-full bg-black sidebar-toggle">
+                    <i data-lucide="menu" class=" fill-[#1A1A1A] text-white"></i>
+                </button>
+            </div>
         </div>
     </header>
+    <!-- // end of navigation -->
+    <div class="overlay h-screen w-full bg-[rgba(0,0,0,.7)] fixed top-0 opacity-0 transition-all duration-300` lg:hidden"></div>
+    <aside class="min-h-screen absolute w-96 bg-white fixed top-0 right-0 translate-x-full transition-all duration-300 lg:hidden" id="sidebar">
+        <div class="p-5 flex items-center gap-6">
+            <div class="w-8 h-8 bg-black rounded-full flex items-center justify-center close-toggle">
+                <i data-lucide="x" width="18" height="18" class="text-white stroke-3"></i>
+            </div>
+            <h3 class="text-2xl font-bold">Menu</h3>
+        </div>
+        <div class="p-5 flex flex-col gap-3">
+            <a href="index.html" class="text-xl">Home</a>
+            <a href="about.html" class="text-xl font-semibold">About</a>
+            <a href="resources.html" class="text-xl">Resources</a>
+            <a href="service.html" class="text-xl">Service</a>
+            <a href="#" class="text-xl">Contact</a>
+        </div>
+    </aside>
 
-    <main class="max-w-7xl m-auto flex flex-col">
-        <section class="w-full" id="services">
+    <!-- main Frame -->
+    <main class="flex flex-col -z-1">
+
+        <section id="services">
             <div class="pt-20 flex flex-col gap-3">
-                <div class="flex items-center justify-between p-5">
-                    <h1 class="font-bold text-3xl">Our Services <br> Reliable</h1>
-                    <p class="text-[#515151] w-140">Our services make healthcare simple and accessible, offering online consultations and follow-up care through secure digital platforms—so you can get professional medical support wherever you are.</p>
+                <div class="flex flex-col items-start justify-between p-5 gap-3 lg:flex-row lg:items-center lg:gap-0">
+                    <h1 class="font-bold text-3xl">Our Services Reliable</h1>
+                    <p class="text-[#515151] w-fit lg:w-130">Our services make healthcare simple and accessible, offering online consultations and follow-up care through secure digital platforms—so you can get professional medical support wherever you are.</p>
                 </div>
-                <div class="flex items-center justify-center p-5 gap-4">
-                    <div class="w-full h-140 bg-[#F6F6F6] rounded-xl shadow-[0_0_7.3px_rgba(0,0,0,.17)] p-5 flex flex-col justify-between">
+                <div class="flex items-center justify-center p-5 gap-4 flex-col lg:flex-row">
+                    <div class="w-full h-fit bg-[#F6F6F6] rounded-xl shadow-[0_0_7.3px_rgba(0,0,0,.17)] p-5 flex flex-col gap-5 lg:justify-between lg:h-140">
                         <div class="flex flex-col gap-2">
                             <h1 class="text-[#4C4C4C] text-3xl font-bold">Consultation</h1>
                             <p class="text-[#9D9D9D] text-sm">Accurate diagnosis and personalized medical care</p>
@@ -62,7 +90,7 @@
                         </ul>
                         <a href="#" class="bg-[#47B0FB] w-full py-4 font-bold rounded-xl text-white text-center">Get to Know</a>
                     </div>
-                    <div class="w-full h-145 bg-[#F6F6F6] rounded-xl shadow-[0_0_84.2px_rgba(0,0,0,.17)] p-5 flex flex-col justify-between">
+                    <div class="w-full h-fit bg-[#F6F6F6] rounded-xl shadow-[0_0_84.2px_rgba(0,0,0,.17)] p-5 flex flex-col gap-5 lg:justify-between lg:h-145">
                         <div class="flex flex-col gap-2">
                             <h1 class="text-[#4C4C4C] text-3xl font-bold">Check-Up</h1>
                             <p class="text-[#9D9D9D] text-sm">Early detection and prevention through comprehensive health screening.</p>
@@ -76,7 +104,7 @@
                         </ul>
                         <a href="#" class="bg-[#47B0FB] w-full py-4 font-bold rounded-xl text-white text-center">Get to Know</a>
                     </div>
-                    <div class="w-full h-150 bg-[#F6F6F6] rounded-xl shadow-[0_0_41.7px_rgba(0,0,0,.17)] p-5 flex flex-col justify-between">
+                    <div class="w-full h-fit bg-[#F6F6F6] rounded-xl shadow-[0_0_41.7px_rgba(0,0,0,.17)] p-5 flex flex-col gap-5 lg:justify-between lg:h-150">
                         <div class="flex flex-col gap-2">
                             <h1 class="text-[#4C4C4C] text-3xl font-bold">Follow-Up</h1>
                             <p class="text-[#9D9D9D] text-sm">Accurate diagnosis and personalized medical care </p>
@@ -93,27 +121,39 @@
                 </div>
             </div>
         </section>
-        <section class="relative p-10 flex flex-col items-center justify-center gap-10 backdrop-blur-md">
-            <div class="absolute w-full h-full">
-                <svg viewBox="0 0 360 180" class="w-full h-full">
-                    <ellipse cx="0" cy="0" rx="170" ry="80" fill="none" stroke="#47B0FB" stroke-width="10"/>
-                    <circle r="100" cx="320" cy="180" fill="none" stroke="#47B0FB" stroke-width="10"></circle>
-                </svg>
-            </div>
-            <div class="absolute inset-0 z-2 backdrop-blur-2xl bg-white/90  "></div>
-            <div class="text-center flex flex-col gap-2 relative z-3">
-                <h1 class="font-bold text-3xl">Ready to enhance your healthcare experience <br> with trusted medical care?</h1>
-                <p>Select your health plan and begin personalized care with Viva Health care</p>
-            </div>
-            <a href="#" class="text-white px-4 py-2 bg-[#26A2FF] rounded-lg font-semibold relative z-3">Start for Free</a>
+        <section class="max-w-7xl m-auto">
+            <section class="relative p-10 flex flex-col items-center justify-center gap-10 backdrop-blur-md">
+                <div class="absolute inset-0 z-2 backdrop-blur-2xl bg-white/90  "></div>
+                <div class="text-center flex flex-col gap-2 relative z-3">
+                    <h1 class="font-bold text-3xl">Ready to enhance your healthcare experience <br> with trusted medical care?</h1>
+                    <p>Select your health plan and begin personalized care with Viva Health care</p>
+                </div>
+                <a href="#" class="text-white px-4 py-2 bg-[#26A2FF] rounded-lg font-semibold relative z-3">Start for Free</a>
+            </section>
         </section>
+
+
     </main>
-    <footer class="p-5 flex gap-2 h-60">
-        <div class="flex flex-col justify-between w-90">
+    <footer class="px-5 py-10
+         flex flex-col lg:flex-row
+         gap-10
+         bg-white">
+
+        <!-- LEFT -->
+        <div class="flex flex-col gap-4 lg:justify-between lg:w-80">
             <h2 class="text-[#26A2FF] text-xl font-bold">Unipro.</h2>
-            <p class="w-80 text-sm">&copy 2025 Viva healthCare by team TekniKarya <br> Terms of Service | Privacy Policy</p>
+
+            <p class="text-sm text-[#333333] max-w-sm">
+                &copy; 2025 Viva healthCare by team TekniKarya <br>
+                Terms of Service | Privacy Policy
+            </p>
         </div>
-        <div class="flex-1 grid grid-cols-4">
+
+        <!-- RIGHT -->
+        <div class="flex-1 grid
+             grid-cols-2 sm:grid-cols-3 lg:grid-cols-4
+             gap-6">
+
             <ul class="flex flex-col gap-2">
                 <li class="font-bold">Products</li>
                 <li>Product</li>
@@ -121,30 +161,36 @@
                 <li>Partner Ship</li>
                 <li>Request Schedule</li>
             </ul>
+
             <ul class="flex flex-col gap-2">
                 <li class="font-bold">About Us</li>
                 <li>About Viva Healthcare</li>
                 <li>Contact Us</li>
                 <li>Features</li>
             </ul>
+
             <ul class="flex flex-col gap-2">
                 <li class="font-bold">Resources</li>
                 <li>Help Center</li>
                 <li>Start a Trial</li>
                 <li>Blog</li>
             </ul>
+
             <ul class="flex flex-col gap-2">
                 <li class="font-bold">Get In Touch</li>
                 <li>Questions or Feedback</li>
                 <li>Linktree</li>
-                <li class="flex items-center gap-4">
+                <li class="flex items-center gap-4 mt-2">
                     <i data-lucide="facebook" class="stroke-3 fill-black"></i>
                     <i data-lucide="twitter" class="stroke-3 fill-black"></i>
                     <i data-lucide="linkedin" class="stroke-3 fill-black"></i>
                 </li>
             </ul>
+
         </div>
     </footer>
+
+
     <script src="src/js/main.js" type="module"></script>
 </body>
 

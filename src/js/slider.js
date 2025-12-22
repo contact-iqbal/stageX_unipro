@@ -5,11 +5,17 @@ export function initSlider(){
     ]
 
     const slider = document.getElementById("slider")
+
+    if(!slider) return 
+
     const img = slider.querySelector(".slider-image")
     const label = slider.querySelector("#slider-wrapper .slider-label")
     const header = slider.querySelector("#slider-wrapper .slider-header")
     const content = slider.querySelector("#slider-wrapper .slider-content")
     const dots = document.querySelector(".slider-dot-container")
+    
+    if(!img && !label && !header && !content && !dots) return
+
     data.forEach((_)=> {
         const dot = document.createElement("div")
         dot.className = 'h-2 w-2 rounded-full border border-white slider-dot'
@@ -21,7 +27,6 @@ export function initSlider(){
     const end = data.length - 1
     let tracker = 0
 
-    if(!slider && !img && !label && !header && !content && !dots) return
 
     function sliderUpdater(i){
         img.style.backgroundImage = `url(${data[i].img})`

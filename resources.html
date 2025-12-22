@@ -10,38 +10,63 @@
 </head>
 
 <body>
-    <header class="w-full bg-white fixed z-9999 h-20">
-        <div class="flex items-center justify-between p-5 max-w-7xl m-auto">
-            <a href="#" class="font-sans font-bold text-xl text-[#26A2FF]">
+    <!--// start of navigation -->
+    <header class="w-full bg-white fixed z-3 h-20 z-2">
+        <div class="flex items-center justify-none lg:justify-between p-5 max-w-7xl m-auto relative z-3">
+            <a href="#" class="font-sans font-bold text-2xl text-[#26A2FF]">
                 Unipro.
             </a>
-            <nav class="text-[#000000] items-center gap-9 flex">
+            <nav class="text-[#000000] items-center gap-9 hidden lg:flex">
                 <a href="index.html">Home</a>
                 <a href="about.html">About</a>
-                <a href="#" class="font-bold">Resources</a>
+                <a href="resources.html" class="font-bold">Resources</a>
                 <a href="service.html">Service</a>
                 <a href="">Contact</a>
             </nav>
-            <button
-                class="dark-mode-toggle bg-[#1A1A1A] p-1 flex items-center gap-1 text-lg font-semibold rounded-full relative">
-                <div class="bg-white w-8 h-8 rounded-full flex items-center justify-center absolute left-1 transition-[left] duration-400 ease-in-out z-2"
-                    id="iconWrapper">
-                    <i data-lucide="moon" class="fill-[#1A1A1A] opacity-100 transition-[opacity] duration-200"
-                        id="moon"></i>
-                    <i data-lucide="sun" class="fill-[#1A1A1A] absolute opacity-0 transition-[opacity] duration-200"
-                        id="sun"></i>
-                </div>
-                <div class="w-8 h-8">
-                </div>
-                <p
-                    class="theme-text text-white px-2 text-sm opacity-100 transition-[opacity] duration-300 relative h-5">
-                    Dark Mode</p>
-            </button>
+
+            <div class="w-full lg:max-w-fit max-w-none lg:w-full h-full flex items-center justify-end gap-1">
+                <button
+                    class="dark-mode-toggle bg-[#1A1A1A] p-1 flex items-center gap-1 text-lg font-semibold rounded-full relative">
+                    <div class="bg-white w-8 h-8 rounded-full flex items-center justify-center absolute left-1 transition-[left] duration-400 ease-in-out z-2"
+                        id="iconWrapper">
+                        <i data-lucide="moon" class="fill-[#1A1A1A] opacity-100 transition-[opacity] duration-200"
+                            id="moon"></i>
+                        <i data-lucide="sun" class="fill-[#1A1A1A] absolute opacity-0 transition-[opacity] duration-200"
+                            id="sun"></i>
+                    </div>
+                    <div class="w-8 h-8">
+                    </div>
+                    <p
+                        class="theme-text text-white px-2 text-sm opacity-100 transition-[opacity] duration-300 relative h-5">
+                        Dark Mode</p>
+                </button>
+
+                <button class="lg:hidden p-2 rounded-full bg-black sidebar-toggle">
+                    <i data-lucide="menu" class=" fill-[#1A1A1A] text-white"></i>
+                </button>
+            </div>
         </div>
     </header>
+    <!-- // end of navigation -->
+    <div class="overlay h-screen w-full bg-[rgba(0,0,0,.7)] fixed top-0 opacity-0 transition-all duration-300` lg:hidden"></div>
+    <aside class="min-h-screen absolute w-96 bg-white fixed top-0 right-0 translate-x-full transition-all duration-300 lg:hidden" id="sidebar">
+        <div class="p-5 flex items-center gap-6">
+            <div class="w-8 h-8 bg-black rounded-full flex items-center justify-center close-toggle">
+                <i data-lucide="x" width="18" height="18" class="text-white stroke-3"></i>
+            </div>
+            <h3 class="text-2xl font-bold">Menu</h3>
+        </div>
+        <div class="p-5 flex flex-col gap-3">
+            <a href="index.html" class="text-xl">Home</a>
+            <a href="about.html" class="text-xl">About</a>
+            <a href="resources.html" class="text-xl font-semibold">Resources</a>
+            <a href="service.html" class="text-xl">Service</a>
+            <a href="#" class="text-xl">Contact</a>
+        </div>
+    </aside>
 
-    <main class=" m-auto flex flex-col">
-        <section class="w-full pt-20 h-140 relative" id="slider">
+    <main class="flex flex-col relative -z-1">
+        <section class=" pt-20 h-140 relative" id="slider">
             <div class="h-full w-full bg-[linear-gradient(to_bottom,#fff_10%,rgba(0,0,0,.5)_100%)] absolute top-0 z-2"></div>
             <div class="slider-image w-full h-full bg-[url(/src/img/building.jpg)] bg-center bg-cover absolute top-0"></div>
             <div class="flex items-end justify-between h-full w-full relative z-3">
@@ -55,7 +80,7 @@
             </div>
         </section>
 
-        <section class="h-fit py-5 w-full flex items-center justify-center max-w-7xl m-auto">
+        <section class="max-w-7xl m-auto h-fit py-5 w-full flex items-center justify-center max-w-7xl m-auto p-5">
             <div class="flex flex-col gap-2 w-full">
                 <div class="flex flex-col gap-2 py-2 border-b border-[#D7D7D7]">
                     <small class="font-semibold">Resources</small>
@@ -90,7 +115,7 @@
             </div>
         </section>
 
-        <section class="h-fit py-6 w-full flex items-center justify-center max-w-7xl m-auto">
+        <section class="max-w-7xl m-auto h-fit py-6 w-full flex items-center justify-center max-w-7xl m-auto p-5">
             <div class="flex flex-col gap-2 w-full">
                 <div class="flex flex-col gap-2 py-2 border-b border-[#D7D7D7]">
                     <small class="font-semibold">Blogging</small>
@@ -172,12 +197,26 @@
             </div>
         </section>
     </main>
-    <footer class="p-5 flex gap-2 h-60">
-        <div class="flex flex-col justify-between w-90">
+    <footer class="px-5 py-10
+         flex flex-col lg:flex-row
+         gap-10
+         bg-white">
+
+        <!-- LEFT -->
+        <div class="flex flex-col gap-4 lg:justify-between lg:w-80">
             <h2 class="text-[#26A2FF] text-xl font-bold">Unipro.</h2>
-            <p class="w-80 text-sm">&copy 2025 Viva healthCare by team TekniKarya <br> Terms of Service | Privacy Policy</p>
+
+            <p class="text-sm text-[#333333] max-w-sm">
+                &copy; 2025 Viva healthCare by team TekniKarya <br>
+                Terms of Service | Privacy Policy
+            </p>
         </div>
-        <div class="flex-1 grid grid-cols-4">
+
+        <!-- RIGHT -->
+        <div class="flex-1 grid
+             grid-cols-2 sm:grid-cols-3 lg:grid-cols-4
+             gap-6">
+
             <ul class="flex flex-col gap-2">
                 <li class="font-bold">Products</li>
                 <li>Product</li>
@@ -185,28 +224,32 @@
                 <li>Partner Ship</li>
                 <li>Request Schedule</li>
             </ul>
+
             <ul class="flex flex-col gap-2">
                 <li class="font-bold">About Us</li>
                 <li>About Viva Healthcare</li>
                 <li>Contact Us</li>
                 <li>Features</li>
             </ul>
+
             <ul class="flex flex-col gap-2">
                 <li class="font-bold">Resources</li>
                 <li>Help Center</li>
                 <li>Start a Trial</li>
                 <li>Blog</li>
             </ul>
+
             <ul class="flex flex-col gap-2">
                 <li class="font-bold">Get In Touch</li>
                 <li>Questions or Feedback</li>
                 <li>Linktree</li>
-                <li class="flex items-center gap-4">
+                <li class="flex items-center gap-4 mt-2">
                     <i data-lucide="facebook" class="stroke-3 fill-black"></i>
                     <i data-lucide="twitter" class="stroke-3 fill-black"></i>
                     <i data-lucide="linkedin" class="stroke-3 fill-black"></i>
                 </li>
             </ul>
+
         </div>
     </footer>
     <script src="src/js/main.js" type="module"></script>
