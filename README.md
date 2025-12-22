@@ -12,6 +12,7 @@ Stage X Competition Team consists of Iqbal, Bintang, and Yoeichi, a dedicated an
 
 **Client:** TailwindCSS
 
-**Icon:** Google material, Font awesome
+**Icon:** Lucide Icon
+
 
 
