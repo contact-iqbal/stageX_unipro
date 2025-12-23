@@ -4,7 +4,6 @@ export function initSidebar(){
     const toggle = document.querySelector(".sidebar-toggle")
     const close = document.querySelector(".close-toggle")
     const overlay = document.querySelector(".overlay")
-    const content = document.getElementById("content")
     let sidebarOpen = false
 
     toggle.addEventListener("click", (e)=>{
@@ -17,8 +16,6 @@ export function initSidebar(){
         overlay.classList.remove("opacity-0")
         overlay.classList.add("opacity-100")
         overlay.classList.add("z-4")
-        content.classList.add("-z-1")
-        content.classList.remove("z-1")
     })
 
     close.addEventListener("click", (e)=>{
@@ -28,8 +25,6 @@ export function initSidebar(){
         sidebar.classList.remove("translate-x-0")
         overlay.classList.add("opacity-0")
         overlay.classList.remove("opacity-100")
-        content.classList.remove("-z-1")
-        content.classList.add("z-1")
         setTimeout(()=>{
             sidebar.classList.remove("z-5")
             overlay.classList.remove("z-4")
@@ -47,8 +42,6 @@ export function initSidebar(){
                 sidebar.classList.remove("translate-x-0")
                 overlay.classList.add("opacity-0")
                 overlay.classList.remove("opacity-100")
-                content.classList.remove("-z-1")
-                content.classList.add("z-1")
                 setTimeout(()=>{
                     sidebar.classList.remove("z-5")
                     overlay.classList.remove("z-4")

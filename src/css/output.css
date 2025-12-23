@@ -990,6 +990,9 @@
   .px-12 {
     padding-inline: calc(var(--spacing) * 12);
   }
+  .px-15 {
+    padding-inline: calc(var(--spacing) * 15);
+  }
   .px-16 {
     padding-inline: calc(var(--spacing) * 16);
   }
@@ -1457,6 +1460,16 @@
       height: calc(var(--spacing) * 150);
     }
   }
+  .lg\:h-155 {
+    @media (width >= 64rem) {
+      height: calc(var(--spacing) * 155);
+    }
+  }
+  .lg\:h-160 {
+    @media (width >= 64rem) {
+      height: calc(var(--spacing) * 160);
+    }
+  }
   .lg\:h-\[360px\] {
     @media (width >= 64rem) {
       height: 360px;
@@ -1547,14 +1560,54 @@
       gap: calc(var(--spacing) * 18);
     }
   }
+  .lg\:p-16 {
+    @media (width >= 64rem) {
+      padding: calc(var(--spacing) * 16);
+    }
+  }
+  .lg\:px-5 {
+    @media (width >= 64rem) {
+      padding-inline: calc(var(--spacing) * 5);
+    }
+  }
+  .lg\:px-8 {
+    @media (width >= 64rem) {
+      padding-inline: calc(var(--spacing) * 8);
+    }
+  }
+  .lg\:px-10 {
+    @media (width >= 64rem) {
+      padding-inline: calc(var(--spacing) * 10);
+    }
+  }
+  .lg\:px-12 {
+    @media (width >= 64rem) {
+      padding-inline: calc(var(--spacing) * 12);
+    }
+  }
   .lg\:px-14 {
     @media (width >= 64rem) {
       padding-inline: calc(var(--spacing) * 14);
     }
   }
+  .lg\:px-16 {
+    @media (width >= 64rem) {
+      padding-inline: calc(var(--spacing) * 16);
+    }
+  }
   .lg\:px-20 {
     @media (width >= 64rem) {
       padding-inline: calc(var(--spacing) * 20);
+    }
+  }
+  .lg\:py-5 {
+    @media (width >= 64rem) {
+      padding-block: calc(var(--spacing) * 5);
+    }
+  }
+  .lg\:py-10 {
+    @media (width >= 64rem) {
+      padding-block: calc(var(--spacing) * 10);
     }
   }
   .xl\:flex {
@@ -1585,6 +1638,26 @@
   .xl\:px-9 {
     @media (width >= 80rem) {
       padding-inline: calc(var(--spacing) * 9);
+    }
+  }
+  .xl\:px-12 {
+    @media (width >= 80rem) {
+      padding-inline: calc(var(--spacing) * 12);
+    }
+  }
+  .xl\:px-13 {
+    @media (width >= 80rem) {
+      padding-inline: calc(var(--spacing) * 13);
+    }
+  }
+  .xl\:px-14 {
+    @media (width >= 80rem) {
+      padding-inline: calc(var(--spacing) * 14);
+    }
+  }
+  .xl\:px-16 {
+    @media (width >= 80rem) {
+      padding-inline: calc(var(--spacing) * 16);
     }
   }
 }

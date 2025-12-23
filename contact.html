@@ -11,7 +11,7 @@
 
 <body>
     <!--// start of navigation -->
-    <header class="w-full bg-white fixed z-3 h-20 z-2">
+    <header class="w-full bg-white fixed z-3 h-20">
         <div class="flex items-center justify-none lg:justify-between p-5 max-w-7xl m-auto relative z-3">
             <a href="#" class="font-sans font-bold text-2xl text-[#26A2FF]">
                 Unipro.
@@ -19,9 +19,9 @@
             <nav class="text-[#000000] items-center gap-9 hidden lg:flex">
                 <a href="index.html">Home</a>
                 <a href="about.html">About</a>
-                <a href="resources.html" class="font-bold">Resources</a>
+                <a href="resources.html">Resources</a>
                 <a href="service.html">Service</a>
-                <a href="contact.html">Contact</a>
+                <a href="contact.html" class="font-bold">Contact</a>
             </nav>
 
             <div class="w-full lg:max-w-fit max-w-none lg:w-full h-full flex items-center justify-end gap-1">
@@ -47,8 +47,25 @@
             </div>
         </div>
     </header>
+    <!-- // end of navigation -->
+    <div class="overlay h-screen w-full bg-[rgba(0,0,0,.7)] fixed top-0 opacity-0 transition-all duration-300` lg:hidden"></div>
+    <aside class="min-h-screen absolute w-96 bg-white fixed top-0 right-0 translate-x-full transition-all duration-300 lg:hidden" id="sidebar">
+        <div class="p-5 flex items-center gap-6">
+            <div class="w-8 h-8 bg-black rounded-full flex items-center justify-center close-toggle">
+                <i data-lucide="x" width="18" height="18" class="text-white stroke-3"></i>
+            </div>
+            <h3 class="text-2xl font-bold">Menu</h3>
+        </div>
+        <div class="p-5 flex flex-col gap-3">
+            <a href="index.html" class="text-xl">Home</a>
+            <a href="about.html" class="text-xl">About</a>
+            <a href="resources.html" class="text-xl">Resources</a>
+            <a href="service.html" class="text-xl">Service</a>
+            <a href="contact.html" class="text-xl font-semibold">Contact</a>
+        </div>
+    </aside>
 
-    <main class="m-auto flex flex-col -z-1">
+    <main class="flex flex-col relative z-1" id="content">
         <section class="min-h-screen w-full bg-[url(/src/img/contact.jpg)] bg-center bg-cover pt-28 pb-8 px-8 flex items-center justify-center">
             <form action="" class="w-120 bg-white px-10 py-6 rounded-xl flex flex-col gap-4">
                 <small class="font-semibold text-xs">CONTACT</small>
