@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="src/css/output.css">
+    <script src="https://unpkg.com/lucide@latest"></script>
+</head>
+
+<body>
+    <!--// start of navigation -->
+    <header class="w-full bg-white fixed z-3 h-20 z-2">
+        <div class="flex items-center justify-none lg:justify-between p-5 max-w-7xl m-auto relative z-3">
+            <a href="#" class="font-sans font-bold text-2xl text-[#26A2FF]">
+                Unipro.
+            </a>
+            <nav class="text-[#000000] items-center gap-9 hidden lg:flex">
+                <a href="index.html">Home</a>
+                <a href="about.html">About</a>
+                <a href="resources.html" class="font-bold">Resources</a>
+                <a href="service.html">Service</a>
+                <a href="contact.html">Contact</a>
+            </nav>
+
+            <div class="w-full lg:max-w-fit max-w-none lg:w-full h-full flex items-center justify-end gap-1">
+                <button
+                    class="dark-mode-toggle bg-[#1A1A1A] p-1 flex items-center gap-1 text-lg font-semibold rounded-full relative">
+                    <div class="bg-white w-8 h-8 rounded-full flex items-center justify-center absolute left-1 transition-[left] duration-400 ease-in-out z-2"
+                        id="iconWrapper">
+                        <i data-lucide="moon" class="fill-[#1A1A1A] opacity-100 transition-[opacity] duration-200"
+                            id="moon"></i>
+                        <i data-lucide="sun" class="fill-[#1A1A1A] absolute opacity-0 transition-[opacity] duration-200"
+                            id="sun"></i>
+                    </div>
+                    <div class="w-8 h-8">
+                    </div>
+                    <p
+                        class="theme-text text-white px-2 text-sm opacity-100 transition-[opacity] duration-300 relative h-5">
+                        Dark Mode</p>
+                </button>
+
+                <button class="lg:hidden p-2 rounded-full bg-black sidebar-toggle">
+                    <i data-lucide="menu" class=" fill-[#1A1A1A] text-white"></i>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <main class="m-auto flex flex-col -z-1">
+        <section class="min-h-screen w-full bg-[url(/src/img/contact.jpg)] bg-center bg-cover pt-28 pb-8 px-8 flex items-center justify-center">
+            <form action="" class="w-120 bg-white px-10 py-6 rounded-xl flex flex-col gap-4">
+                <small class="font-semibold text-xs">CONTACT</small>
+                <h1 class=" text-3xl font-bold">Get In Touch</h1>
+                <p class="text-[8px]">We’d love to hear from you! send us a message using the form opposite, or email us. We’d love to hear from you! send us a message using the form opposite, or email us.</p>
+                <div class="flex flex-col gap-20">
+                    <div class="flex flex-col gap-4">
+                        <div class="grid grid-cols-1 gap-x-2 md:grid-cols-2">
+                            <div class="flex gap-2 flex-col">
+                                <label for="first_name" class="text-sm">First Name</label>
+                                <input id="first_name" type="text" class="border border-[#ACACAC] focus:outline-[#9A9A9A] rounded-md px-2 text-sm p-1 focus:text-[#9A9A9A]">
+                            </div>
+                            <div class="flex gap-2 flex-col">
+                                <label for="last_name" class="text-sm">Last Name</label>
+                                <input id="last_name" type="text" class="border border-[#ACACAC] focus:outline-[#9A9A9A] rounded-md px-2 text-sm p-1 focus:text-[#9A9A9A]">
+                            </div>
+                        </div>
+                        <div class="grid grid-cols-1 gap-x-2 md:grid-cols-2">
+                            <div class="flex gap-2 flex-col">
+                                <label for="email" class="text-sm">Email</label>
+                                <input id="email" type="email" class="border border-[#ACACAC] focus:outline-[#9A9A9A] rounded-md px-2 text-sm p-1 focus:text-[#9A9A9A]">
+                            </div>
+                            <div class="flex gap-2 flex-col">
+                                <label for="phone" class="text-sm">Phone (Optional)</label>
+                                <input id="phone" type="text" class="border border-[#ACACAC] focus:outline-[#9A9A9A] rounded-md px-2 text-sm p-1 focus:text-[#9A9A9A]">
+                            </div>
+                        </div>
+                        <div class="flex gap-2 flex-col">
+                            <label for="help" class="text-sm">How can we help you?</label>
+                            <input type="text" id="help" class="border border-[#ACACAC] focus:outline-[#9A9A9A] rounded-md px-2 text-sm p-1 focus:text-[#9A9A9A] h-40">
+                        </div>
+                        <div class="flex gap-2 flex-col">
+                            <label for="help" class="text-sm">How did you hear about us?</label>
+                            <input type="text" id="help" class="border border-[#ACACAC] focus:outline-[#9A9A9A] rounded-md px-2 text-sm p-1 focus:text-[#9A9A9A]">
+                        </div>
+                    </div>
+                    <button class="text-sm bg-[#262626] text-white py-4 px-8 w-fit rounded-sm">Submit</button>
+                </div>
+            </form>
+        </section>
+        <section class="px-2 py-1 bg-[#47B0FB] text-white overflow-hidden w-full" id="text_walking">
+            <div class="animate-carousel w-max flex items-center whitespace-nowrap">
+                <p class="me-10">Viva</p>
+                <div class="h-2 w-2 bg-white rounded-full shrink-0 me-10"></div>
+                <p class="me-10">Health Care</p>
+                <div class="h-2 w-2 bg-white rounded-full shrink-0 me-10"></div>
+                <p class="me-10">Viva</p>
+                <div class="h-2 w-2 bg-white rounded-full shrink-0 me-10"></div>
+                <p class="me-10">Health Care</p>
+                <div class="h-2 w-2 bg-white rounded-full shrink-0 me-10"></div>
+                <p class="me-10">Viva</p>
+                <div class="h-2 w-2 bg-white rounded-full shrink-0 me-10"></div>
+                <p class="me-10">Health Care</p>
+                <div class="h-2 w-2 bg-white rounded-full shrink-0 me-10"></div>
+
+                <p class="me-10">Viva</p>
+                <div class="h-2 w-2 bg-white rounded-full shrink-0 me-10"></div>
+                <p class="me-10">Health Care</p>
+                <div class="h-2 w-2 bg-white rounded-full shrink-0 me-10"></div>
+                <p class="me-10">Viva</p>
+                <div class="h-2 w-2 bg-white rounded-full shrink-0 me-10"></div>
+                <p class="me-10">Health Care</p>
+                <div class="h-2 w-2 bg-white rounded-full shrink-0 me-10"></div>
+
+                <p class="me-10">Viva</p>
+                <div class="h-2 w-2 bg-white rounded-full shrink-0 me-10"></div>
+                <p class="me-10">Health Care</p>
+                <div class="h-2 w-2 bg-white rounded-full shrink-0 me-10"></div>
+                <p class="me-10">Viva</p>
+                <div class="h-2 w-2 bg-white rounded-full shrink-0 me-10"></div>
+                <p class="me-10">Health Care</p>
+                <div class="h-2 w-2 bg-white rounded-full shrink-0 me-10"></div>
+                <p class="me-10">Viva</p>
+                <div class="h-2 w-2 bg-white rounded-full shrink-0 me-10"></div>
+                <p class="me-10">Health Care</p>
+                <div class="h-2 w-2 bg-white rounded-full shrink-0 me-10"></div>
+
+                <p class="me-10">Viva</p>
+                <div class="h-2 w-2 bg-white rounded-full shrink-0 me-10"></div>
+                <p class="me-10">Health Care</p>
+                <div class="h-2 w-2 bg-white rounded-full shrink-0 me-10"></div>
+                <p class="me-10">Viva</p>
+                <div class="h-2 w-2 bg-white rounded-full shrink-0 me-10"></div>
+                <p class="me-10">Health Care</p>
+                <div class="h-2 w-2 bg-white rounded-full shrink-0 me-10"></div>
+            </div>
+        </section>
+    </main>
+    <footer class="px-5 py-10
+         flex flex-col lg:flex-row
+         gap-10
+         bg-white">
+
+        <!-- LEFT -->
+        <div class="flex flex-col gap-4 lg:justify-between lg:w-80">
+            <h2 class="text-[#26A2FF] text-xl font-bold">Unipro.</h2>
+
+            <p class="text-sm text-[#333333] max-w-sm">
+                &copy; 2025 Viva healthCare by team TekniKarya <br>
+                Terms of Service | Privacy Policy
+            </p>
+        </div>
+
+        <!-- RIGHT -->
+        <div class="flex-1 grid
+             grid-cols-2 sm:grid-cols-3 lg:grid-cols-4
+             gap-6">
+
+            <ul class="flex flex-col gap-2">
+                <li class="font-bold">Products</li>
+                <li>Product</li>
+                <li>Pricing</li>
+                <li>Partner Ship</li>
+                <li>Request Schedule</li>
+            </ul>
+
+            <ul class="flex flex-col gap-2">
+                <li class="font-bold">About Us</li>
+                <li>About Viva Healthcare</li>
+                <li>Contact Us</li>
+                <li>Features</li>
+            </ul>
+
+            <ul class="flex flex-col gap-2">
+                <li class="font-bold">Resources</li>
+                <li>Help Center</li>
+                <li>Start a Trial</li>
+                <li>Blog</li>
+            </ul>
+
+            <ul class="flex flex-col gap-2">
+                <li class="font-bold">Get In Touch</li>
+                <li>Questions or Feedback</li>
+                <li>Linktree</li>
+                <li class="flex items-center gap-4 mt-2">
+                    <i data-lucide="facebook" class="stroke-3 fill-black"></i>
+                    <i data-lucide="twitter" class="stroke-3 fill-black"></i>
+                    <i data-lucide="linkedin" class="stroke-3 fill-black"></i>
+                </li>
+            </ul>
+
+        </div>
+    </footer>
+    <script src="src/js/main.js" type="module"></script>
+</body>
+
+</html>

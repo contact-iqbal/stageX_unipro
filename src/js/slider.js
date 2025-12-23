@@ -18,7 +18,7 @@ export function initSlider(){
 
     data.forEach((_)=> {
         const dot = document.createElement("div")
-        dot.className = 'h-2 w-2 rounded-full border border-white slider-dot'
+        dot.className = 'h-4 md:h-2 w-4 md:w-2 rounded-full border border-white slider-dot'
         dots.appendChild(dot)
     })
     const dot = document.querySelectorAll(".slider-dot")

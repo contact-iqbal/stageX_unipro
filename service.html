@@ -19,10 +19,10 @@
             </a>
             <nav class="text-[#000000] items-center gap-9 hidden lg:flex">
                 <a href="index.html">Home</a>
-                <a href="about.html" class="font-bold">About</a>
+                <a href="about.html">About</a>
                 <a href="resources.html">Resources</a>
-                <a href="service.html">Service</a>
-                <a href="">Contact</a>
+                <a href="service.html" class="font-bold">Service</a>
+                <a href="contact.html">Contact</a>
             </nav>
 
             <div class="w-full lg:max-w-fit max-w-none lg:w-full h-full flex items-center justify-end gap-1">
@@ -59,10 +59,10 @@
         </div>
         <div class="p-5 flex flex-col gap-3">
             <a href="index.html" class="text-xl">Home</a>
-            <a href="about.html" class="text-xl font-semibold">About</a>
+            <a href="about.html" class="text-xl">About</a>
             <a href="resources.html" class="text-xl">Resources</a>
-            <a href="service.html" class="text-xl">Service</a>
-            <a href="#" class="text-xl">Contact</a>
+            <a href="service.html" class="text-xl font-semibold">Service</a>
+            <a href="contact.html" class="text-xl">Contact</a>
         </div>
     </aside>
 
@@ -76,7 +76,7 @@
                     <p class="text-[#515151] w-fit lg:w-130">Our services make healthcare simple and accessible, offering online consultations and follow-up care through secure digital platforms—so you can get professional medical support wherever you are.</p>
                 </div>
                 <div class="flex items-center justify-center p-5 gap-4 flex-col lg:flex-row">
-                    <div class="w-full h-fit bg-[#F6F6F6] rounded-xl shadow-[0_0_7.3px_rgba(0,0,0,.17)] p-5 flex flex-col gap-5 lg:justify-between lg:h-140">
+                    <div class="w-[calc(100%-64px)] h-fit bg-[#F6F6F6] rounded-xl shadow-[0_0_7.3px_rgba(0,0,0,.17)] p-5 flex flex-col gap-5 lg:justify-between lg:h-140">
                         <div class="flex flex-col gap-2">
                             <h1 class="text-[#4C4C4C] text-3xl font-bold">Consultation</h1>
                             <p class="text-[#9D9D9D] text-sm">Accurate diagnosis and personalized medical care</p>
@@ -90,7 +90,7 @@
                         </ul>
                         <a href="#" class="bg-[#47B0FB] w-full py-4 font-bold rounded-xl text-white text-center">Get to Know</a>
                     </div>
-                    <div class="w-full h-fit bg-[#F6F6F6] rounded-xl shadow-[0_0_84.2px_rgba(0,0,0,.17)] p-5 flex flex-col gap-5 lg:justify-between lg:h-145">
+                    <div class="w-[calc(100%-32px)] h-fit bg-[#F6F6F6] rounded-xl shadow-[0_0_84.2px_rgba(0,0,0,.17)] p-5 flex flex-col gap-5 lg:justify-between lg:h-145">
                         <div class="flex flex-col gap-2">
                             <h1 class="text-[#4C4C4C] text-3xl font-bold">Check-Up</h1>
                             <p class="text-[#9D9D9D] text-sm">Early detection and prevention through comprehensive health screening.</p>
@@ -121,9 +121,14 @@
                 </div>
             </div>
         </section>
-        <section class="max-w-7xl m-auto">
-            <section class="relative p-10 flex flex-col items-center justify-center gap-10 backdrop-blur-md">
-                <div class="absolute inset-0 z-2 backdrop-blur-2xl bg-white/90  "></div>
+        <section class="w-full m-auto">
+            <section class="relative p-10 flex flex-col items-center justify-center gap-10">
+                <svg viewBox="0 0 360 180" class="w-full h-full z-1 absolute top-0">
+                    <ellipse cx="0" cy="0" rx="170" ry="80" fill="none" stroke="#47B0FB" stroke-width="10"/>
+                    <circle r="100" cx="320" cy="180" fill="none" stroke="#47B0FB" stroke-width="10"></circle>
+                </svg>
+                <div class="w-full h-full absolute z-2 backdrop-blur-2xl bg-[rgba(0,0,0,.1)] bg-white/30">
+                </div>
                 <div class="text-center flex flex-col gap-2 relative z-3">
                     <h1 class="font-bold text-3xl">Ready to enhance your healthcare experience <br> with trusted medical care?</h1>
                     <p>Select your health plan and begin personalized care with Viva Health care</p>

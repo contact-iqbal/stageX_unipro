@@ -18,11 +18,11 @@
                 Unipro.
             </a>
             <nav class="text-[#000000] items-center gap-9 hidden lg:flex">
-                <a href="index.html">Home</a>
-                <a href="about.html" class="font-bold">About</a>
+                <a href="index.html" class="font-bold">Home</a>
+                <a href="about.html">About</a>
                 <a href="resources.html">Resources</a>
                 <a href="service.html">Service</a>
-                <a href="">Contact</a>
+                <a href="contact.html">Contact</a>
             </nav>
 
             <div class="w-full lg:max-w-fit max-w-none lg:w-full h-full flex items-center justify-end gap-1">
@@ -58,11 +58,11 @@
             <h3 class="text-2xl font-bold">Menu</h3>
         </div>
         <div class="p-5 flex flex-col gap-3">
-            <a href="index.html" class="text-xl">Home</a>
-            <a href="about.html" class="text-xl font-semibold">About</a>
+            <a href="index.html" class="text-xl font-semibold">Home</a>
+            <a href="about.html" class="text-xl">About</a>
             <a href="resources.html" class="text-xl">Resources</a>
             <a href="service.html" class="text-xl">Service</a>
-            <a href="#" class="text-xl">Contact</a>
+            <a href="contact.html" class="text-xl">Contact</a>
         </div>
     </aside>
 
@@ -127,7 +127,7 @@
                     </button>
                     <p class="text-xs text-[#9C9C9C]">Medicine Meets Technology <br> Your Online Health Hub</p>
                 </div>
-                <div class="col-span-2 py-3">
+                <div class="col-span-2 py-3 h-50">
                     <div class="bg-[#CBE6FA] rounded-lg w-full h-full relative flex">
                         <div class="flex flex-col justify-between p-4 flex-1">
                             <div class="w-full flex justify-between">
@@ -152,17 +152,17 @@
                         </div>
 
 
-                        <div class="hidden md:flex flex-col left-[50%] h-full">
+                        <div class="flex flex-col left-[50%] h-full">
                             <div class="triangle-reverse flex-1 w-10"></div>
                             <div class="triangle flex-1 w-10"></div>
                         </div>
-                        <div class="hidden md:flex items-center justify-center p-4 flex-1 gap-2">
-                            <div class="h-25 w-25 rounded-full text-black border-3 border-[#47B0FB] p-2">
+                        <div class="p-8 md:flex items-center justify-center md:flex-1 md:p-4 gap-2">
+                            <div class="hidden md:block h-25 w-25 rounded-full text-black border-3 border-[#47B0FB] p-2">
                                 <p
                                     class="flex items-center justify-center bg-white w-full h-full rounded-full text-lg font-semibold">
                                     89%</p>
                             </div>
-                            <div class="flex flex-col items-start">
+                            <div class="hidden md:flex flex-col items-start">
                                 <p class="text-lg font-semibold">Successfull Rate</p>
                                 <span class="text-sm">Healing Success</span>
                             </div>
@@ -288,9 +288,9 @@
             </div>
         </section>
 
-        <section class="max-w-7xl m-auto w-full flex items-center justify-between p-5" id="service-header">
+        <section class="max-w-7xl m-auto w-full flex justify-between gap-3 p-5 flex-col md:items-center md:flex-row md:gap-0" id="service-header">
             <h1 class="font-bold text-4xl">Our Services <br> Reliable</h1>
-            <p class="text-xs text-[#515151] w-120 text-end">Our services make healthcare simple and accessible,
+            <p class="text-xs text-[#515151] md:w-120 md:text-end">Our services make healthcare simple and accessible,
                 offering online consultations and follow-up care through secure digital platforms—so you can get
                 professional medical support wherever you are.</p>
         </section>
@@ -321,11 +321,6 @@
                         wellness programs focused on early detection and long-term disease
                         prevention. </p>
                 </div>
-                <div class="min-h-[306px] bg-[transparent] rounded-lg flex flex-col gap-3 items-center justify-center">
-                    <h2 class="font-semibold w-full text-center text-2xl px-3 underline">See More</h2>
-                    <p class="text-xs w-full text-center px-6">Look Trough our service available
-                        only for you</p>
-                </div>
                 <div class="min-h-[306px] bg-[#7DC9FF] rounded-lg flex flex-col gap-3 items-center justify-center">
                     <i data-lucide="stethoscope" class="text-white scale-200 stroke-2"></i>
                     <h2 class="font-semibold text-white w-full text-center text-xl px-3">Chronic Disease Management</h2>
@@ -338,6 +333,11 @@
                     <h2 class="font-semibold text-white w-full text-center text-xl px-3">Women’s Health Services</h2>
                     <p class="text-xs w-full text-white text-center px-6">Specialized care including gynecological exams,
                         prenatal consultations, family planning, and hormonal health management. </p>
+                </div>
+                <div class="min-h-[306px] bg-[transparent] rounded-lg flex flex-col gap-3 items-center justify-center">
+                    <h2 class="font-semibold w-full text-center text-2xl px-3 underline">See More</h2>
+                    <p class="text-xs w-full text-center px-6">Look Trough our service available
+                        only for you</p>
                 </div>
             </section>
         </section>
@@ -537,8 +537,7 @@
             <div class="max-w-7xl mx-auto">
 
                 <div class="relative flex flex-col md:flex-row
-                   bg-[#8BCDFF] rounded-3xl
-                   min-h-[320px] md:min-h-[280px]">
+                   bg-[#8BCDFF] rounded-3xl md:min-h-[280px]">
 
                     <!-- IMAGE -->
                     <div class="md:w-1/2 relative hidden md:flex items-end justify-center ">
